@@ -1,0 +1,110 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .wrapper{
+    display:flex;
+  }
+  #compareresult1,
+  #compareresult2 {
+    flex: 1;
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .collagecontainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .left {
+    flex: 1;
+    margin-right: 20px;
+    
+  }
+  
+  .leftimg {
+    max-width: 100%;
+    height: 100%;
+    
+  }
+  
+  .right {
+    flex: 2;
+    
+
+  }
+  
+  .collageName {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .collageuniversity {
+    font-size: 16px;
+  }
+  
+  .collagedistrict {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  button {
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+  }
+  
+  #option1, #option2 {
+    margin: 20px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    #compareresult1, #compareresult2 {
+      margin: 10px 0;
+    }
+  
+    .collagecontainer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  

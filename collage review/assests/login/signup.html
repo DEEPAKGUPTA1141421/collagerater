@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    1<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <form onsubmit="handleSignUp(event)" name="myForm">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+        
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" name="confirmPassword" id="confirmPassword" required>
+        
+        <input type="submit" value="Sign Up">
+    </form> 
+    <script src="login.js"></script>
+</body>
+</html>

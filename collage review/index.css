@@ -1,0 +1,232 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-image: linear-gradient(to right,#774f9e,#5464a8);
+    overflow-x: hidden;
+}
+/* //notice conatainer */
+.notice-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.notice {
+  font-size: 70px;
+  background-color: black;
+  color:red;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: none;
+}
+#searchresult{
+  position: absolute;
+    width: 100%;
+    top: 10px;
+    left: 25%;
+    height:30px;
+}
+/* navbar styles */
+/* Style for the navigation bar */
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #007bff;
+  }
+  
+  #favourite {
+    background: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #favourite:hover {
+    background: #0056b3;
+  }
+  
+  #searchbox {
+    width: 40%;
+    margin: 0 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin: 0 20%;
+    height:20px;
+    font-size: larger;
+  }
+  
+  #searchbtn {
+    position: relative;
+    background: #007bff;
+    height:30px;
+    font-size: larger;
+    color: #fff;
+    border: none;
+    width: 10%;
+    right:300px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #searchbtn:hover {
+    background: #0056b3;
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav a {
+      margin: 5px;
+    }
+  }
+  
+#heading {
+    text-align: center;
+    font-size: 2rem; /* Responsive font size */
+    color: #007bff; /* Blue color for the text */
+    margin-top: 20px;
+  }
+  
+  /* Make the heading responsive */
+  @media (max-width: 768px) {
+    #heading {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+  }
+.sliderdiv{
+    background-color: aqua;
+    height:20em;
+    width: 100vw;
+    display: inline-block;
+}
+.sliderimg{
+    height:20em;
+    width: 100vw;
+}
+#iconsnext{
+    height: 5em;
+    position: absolute;
+    left: 2px;
+    top: 300px;
+    cursor: pointer;
+}
+#iconsnext:hover{
+    position: absolute;
+    left:30px;
+}
+#iconsprev:hover{
+    position: absolute;
+    right: 30px;
+}
+#iconsprev{
+  height: 4em;
+  position: absolute;
+  right: 2px;
+  top: 315px;
+  cursor: pointer;
+}
+/* //content css */
+/* Style for the collage results */
+/* Default styling for the collage container */
+/* Styling for the left (image) part */
+
+
+/* Affiliated university styling */
+/* //test css */
+/* Base styling for collage container */
+.collagecontainer {
+  display: flex;
+  background: #f9f9f9;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Styling for the left image */
+.left {
+  flex: 1;
+  margin: 10px;
+}
+
+.left img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styling for the right content */
+.right {
+  flex: 2;
+  padding: 5px;
+}
+
+.collageName {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+.collageuniversity {
+  font-size: 16px;
+}
+
+.collagedistrict {
+  font-size: 16px;
+  color: #555;
+}
+
+.addToFavourite {
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.addToFavourite:hover {
+  background: #0056b3;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .collagecontainer {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .right {
+      flex: 1;
+  }
+}
+
+/* Width to cover the screen */
+#content > div {
+  width: 100%;
+}

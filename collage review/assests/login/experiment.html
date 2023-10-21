@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+</head>
+<body>
+    <h1>Upload an Image</h1>
+    <input type="file" id="imageInput">
+    <button id="uploadButton">Upload</button>
+
+    <img id="uploadedImage" style="display: none;" alt="Uploaded Image">
+
+    <script>
+        const imageInput = document.getElementById("imageInput");
+        const uploadButton = document.getElementById("uploadButton");
+        const uploadedImage = document.getElementById("uploadedImage");
+
+        imageInput.addEventListener("change", function () {
+            const file = imageInput.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    const imageData = e.target.result;
+                    uploadedImage.src = imageData;
+                    uploadedImage.style.display = "block";
+                };
+
+                reader.readAsDataURL(file);
+            }
+        });
+
+        uploadButton.addEventListener("click", function () {
+            const imageData = uploadedImage.src;
+            localStorage.setItem("uploadedImage", imageData);
+            alert("Image uploaded and stored in localStorage!");
+        });
+    </script>
+</body>
+</html>

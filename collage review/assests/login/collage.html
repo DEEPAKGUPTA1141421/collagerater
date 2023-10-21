@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Collage Profile</title>
+    <link rel="stylesheet" href="collage.css">
+</head>
+<body>
+    <h1>Create Collage Profile</h1>
+    <form id="collageForm">
+        <label for="university">University Name:</label>
+        <input type="text" name="university" id="university" required>
+        
+        <label for="collage">Collage Name:</label>
+        <input type="text" name="collage" id="collage" required>
+        
+        <label for="college_type">College Type:</label>
+        <input type="text" name="college_type" id="college_type" required>
+        
+        <label for="state">State:</label>
+        <input type="text" name="state" id="state" required>
+        <label for="district">District:</label>
+        <input type="text" name="district" id="district" required>
+        <input type="submit" value="Create Profile">
+    </form>
+    <input type="file" id="imageInput">
+    <button id="uploadButton">Upload</button>
+    <img id="uploadedImage" style="display: none;" alt="Uploaded Image">
+    <div id="collagecreate">
+
+    </div>
+    
+    <script src="collage.js"></script>
+</body>
+</html>
